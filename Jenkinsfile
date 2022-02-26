@@ -1,5 +1,5 @@
 node{
-properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '5', daysToKeepStr: '5', numToKeepStr: '')), pipelineTriggers([pollSCM('* * * * *')])])
+    properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '5', daysToKeepStr: '', numToKeepStr: '5')), pipelineTriggers([pollSCM('* * * * *')])])
     def mavenHome = tool name: "maven3.8.4"
     stage('checkoutCode'){
       git branch: 'development', credentialsId: 'ca275210-41e6-474e-9d15-037bbf8ec35d', url: 'https://github.com/SatyaDevopsTesting/maven-web-application.git'
