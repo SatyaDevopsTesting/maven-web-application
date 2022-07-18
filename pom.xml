@@ -99,13 +99,13 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>Mithun Technologies Releases Nexus Repository</name>
-	      <url>http://localhost:8081/repository/webrelease/</url>
+	      <url>http://43.204.212.10:8081/repository/maven-web-app/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>Mithun Technologies Snapshot Nexus Repository </name>
-	      <url>http://localhost:8081/repository/websnapshot/</url>
+	      <url>http://43.204.212.10:8081/repository/mavenwebapp-snapshot/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
