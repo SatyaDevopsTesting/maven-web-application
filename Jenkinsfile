@@ -18,7 +18,7 @@ node{
  //   sshagent(['cdea29e3-b368-4e74-9a28-488d8f31b7a5']) {
  //   sh "scp -o StrictHostKeyChecking=no target/maven-web-application.war ec2-user@3.110.213.18:/opt/apache-tomcat-10.0.16/webapps/"
 //}
-//}
+// }
     stage('EmailNotification'){
         emailext body: '''Build is over!!
 
